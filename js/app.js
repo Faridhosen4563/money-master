@@ -69,6 +69,10 @@ document.getElementById("save-btn").addEventListener('click', function () {
             alert("Saving cannot nagative.")
             return;
         }
+        else if (savingParcent > 100) {
+            alert(`you cant save more 100% `);
+            return;
+        }
     }
     else {
         alert("Enter saving Value");
